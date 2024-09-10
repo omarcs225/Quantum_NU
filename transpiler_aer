@@ -1,8 +1,0 @@
-from qiskit import QuantumCircuit,transpile
-from qiskit.quantum_info import Statevector
-from qiskit.providers.basic_provider import basic_simulator
-simulator_basic=basic_simulator
-qc=QuantumCircuit(2,1)
-qc.measure(1,0)
-qc.h(0).c_if(0,1)
-qc.draw('mpl')
